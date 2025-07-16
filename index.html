@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Shooting Game - Web Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Turn-Based Shooting Game</h1>
+    <div id="game">
+        <div class="player" id="player1">
+            <h2>Player 1</h2>
+            <p>Health: <span id="health1">100</span></p>
+            <button onclick="makeMove('player1', 'gun1')">Gun 1</button>
+            <button onclick="makeMove('player1', 'gun2')">Gun 2</button>
+            <button onclick="makeMove('player1', 'heal')">Heal</button>
+        </div>
+        <div class="player" id="player2">
+            <h2>Player 2</h2>
+            <p>Health: <span id="health2">100</span></p>
+            <label><input type="checkbox" id="armourToggle"> Armour</label><br>
+            <button onclick="makeMove('player2', 'gun1')">Gun 1</button>
+            <button onclick="makeMove('player2', 'gun2')">Gun 2</button>
+            <button onclick="makeMove('player2', 'heal')">Heal</button>
+        </div>
+    </div>
+    <p id="status">Player 1's turn</p>
+    <script src="script.js"></script>
+</body>
+</html>
